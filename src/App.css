@@ -9,6 +9,7 @@
   align-items: center;
   height: 100vh;
   background-color: rgb(202, 182, 229);
+  width: 100%;
 }
 .middleBox {
   display: grid;
@@ -55,3 +56,26 @@ span {
 .red {
   color: red;
 }
+/* 데스크탑에서 사용될 스타일을 먼저 작성합니다. */
+
+@media screen and (max-width: 768px) {
+  /* 모바일에 사용될 스트일 시트를 여기에 작성합니다. */
+  .middleBox {
+    display: grid;
+    /* text-align: center;
+    justify-content: center; */
+    grid-template-columns: repeat(1, 150px);
+    grid-template-rows: repeat(3, 150px);
+  }
+  .bottomBox {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px);
+    grid-gap: 10px;
+  }
+}
+
+/* 출처: https://offbyone.tistory.com/121 [쉬고 싶은 개발자] */

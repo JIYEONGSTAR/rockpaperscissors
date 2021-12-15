@@ -7,8 +7,8 @@
 //   return <div>{hand}</div>;
 // };
 
-import React, { useState, useEffect, useRef } from "react";
-import ReactDOM from "react-dom";
+import React, { useEffect, useRef } from "react";
+// import ReactDOM from "react-dom";
 import { FaHandRock, FaHandPeace, FaHandPaper } from "react-icons/fa";
 function Interval(props) {
   const count = props.hand;
